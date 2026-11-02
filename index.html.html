@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Oluwabusola Oyenuga | Data Analyst</title>
+<meta name="description" content="Data analyst in Lagos working with SQL, Power BI, Excel and Python. Open to remote and international roles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F3F6F7; --surface:#E8EEF0; --ink:#14232B; --muted:#4F6068; --line:#CBD6DA; --accent:#0B6B62;
+  --head:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
+  --body:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0F1A1F;--surface:#17262C;--ink:#E6EEF0;--muted:#9DB0B7;--line:#2A3B42;--accent:#52C7B8;color-scheme:dark}
+}
+:root[data-theme="dark"]{--bg:#0F1A1F;--surface:#17262C;--ink:#E6EEF0;--muted:#9DB0B7;--line:#2A3B42;--accent:#52C7B8;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 var(--body);
+  padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px)}
+.wrap{max-width:56rem;margin:0 auto;padding:0 1.25rem}
+a{color:var(--accent);text-underline-offset:.2em}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+header.top{padding:1.25rem 0;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-weight:500}
+header.top nav{display:flex;gap:1.25rem;flex-wrap:wrap}
+header.top a{color:var(--muted);text-decoration:none}
+header.top a:hover{color:var(--ink);text-decoration:underline}
+.hero{padding:clamp(2.5rem,9vw,6rem) 0 clamp(2rem,6vw,4rem)}
+.hero h1{font:700 clamp(2.6rem,9vw,5.5rem)/.98 var(--head);letter-spacing:-.03em;margin:0 0 1.25rem}
+.hero .role{font:600 clamp(1.15rem,3vw,1.5rem)/1.3 var(--head);color:var(--accent);margin:0 0 1.25rem}
+.hero p.sum{max-width:38rem;margin:0 0 1.75rem;font-size:1.125rem}
+.cta{display:flex;gap:.75rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.7rem 1.2rem;border-radius:4px;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
+.btn.main{background:var(--accent);color:var(--bg)}
+.btn.alt{color:var(--accent)}
+.btn:hover{filter:brightness(1.1)}
+section{padding:clamp(2rem,6vw,3.5rem) 0;border-top:1px solid var(--line)}
+h2{font:700 clamp(1.6rem,4vw,2.1rem)/1.15 var(--head);letter-spacing:-.02em;margin:0 0 .5rem}
+.lede{color:var(--muted);margin:0 0 2rem;max-width:38rem}
+.work{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
+.work li{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr) minmax(0,.8fr);gap:1rem 2rem;padding:1.4rem 0;border-bottom:1px solid var(--line)}
+.work h3{font:700 1.25rem/1.25 var(--head);margin:0 0 .35rem}
+.work h3 a{color:var(--ink)}
+.work h3 a:hover{color:var(--accent)}
+.work .what{margin:0;color:var(--muted);font-size:.975rem}
+.work .found{margin:0}
+.work .tools{margin:0;color:var(--muted);font-size:.95rem}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem}
+.job{margin:0 0 1.75rem}
+.job h3{font:700 1.15rem/1.3 var(--head);margin:0}
+.job .when{color:var(--muted);margin:.1rem 0 .4rem;font-size:.95rem}
+.job p{margin:0}
+.skills{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.5rem}
+.skills li{background:var(--surface);padding:.4rem .8rem;border-radius:4px;font-weight:500}
+.contact p{max-width:34rem}
+.contact .links{display:flex;gap:1.5rem;flex-wrap:wrap;font-weight:600}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.925rem;border-top:1px solid var(--line)}
+@media (max-width:48rem){
+  .work li{grid-template-columns:1fr;gap:.5rem}
+  .cols{grid-template-columns:1fr;gap:0}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <span>Oluwabusola Oyenuga</span>
+    <nav aria-label="Sections"><a href="#real">Real data</a><a href="#ai">Synthetic</a><a href="#internships">Internships</a><a href="#more">More</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1>Oluwabusola Oyenuga</h1>
+      <p class="role">Data analyst in Lagos, Nigeria</p>
+      <p class="sum">I turn messy operational and financial data into reports people can act on. Day to day I reconcile data from several sources and report to senior management twice a day, and I teach Excel, Power BI and Python to 50 students. I’m open to remote and international roles.</p>
+      <div class="cta">
+        <a class="btn main" href="#real">See my projects</a>
+        <a class="btn alt" href="mailto:oyenugaoluwabusola2@gmail.com">Email me</a>
+      </div>
+    </div>
+
+    <section id="real">
+      <h2>Real data projects</h2>
+      <p class="lede">Built from public or published data. Each repo names its sources.</p>
+      <ul class="work">
+        <li>
+          <div>
+            <h3><a href="https://github.com/oluwabusola-may/Nigerian-Telecom-Competitor-Analysis">Telecom market share</a></h3>
+            <p class="what">Which operators gain or lose subscribers, and why</p>
+          </div>
+          <p class="found">Analysed seven quarters of regulator data to show who is winning share, where, and what number porting reveals about customer switching. Fourteen business questions answered in SQL.</p>
+          <p class="tools">Power Query, MySQL, Power BI</p>
+        </li>
+        <li>
+          <div>
+            <h3><a href="https://github.com/oluwabusola-may/Nigerian-Food-Inflation-Staple-Basket-Analysis">Staple food prices</a></h3>
+            <p class="what">A four-item basket against national food inflation</p>
+          </div>
+          <p class="found">Headline food inflation was +16.96% year on year, while the staple basket fell 24.7%. The gap points to a cost opportunity for food and consumer businesses.</p>
+          <p class="tools">Excel, Power Query, star-schema model</p>
+        </li>
+        <li>
+          <div>
+            <h3><a href="https://github.com/oluwabusola-may/nigeria-professional-financial-analysis">Financial wellness</a></h3>
+            <p class="what">A 0 to 100 score for young professionals</p>
+          </div>
+          <p class="found">Designed the survey and scoring model for 308 respondents and built a three-page dashboard. 74.4% fall into the Vulnerable or At Risk bands, and emergency savings is the weakest area.</p>
+          <p class="tools">Survey design, Python, SQL, Power BI</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="ai">
+      <h2>AI-enabled and synthetic data projects</h2>
+      <p class="lede">Built with AI help on generated data, to show the full analyst workflow. Each repo says so up front, and the findings demonstrate method, not real markets.</p>
+      <ul class="work">
+        <li>
+          <div>
+            <h3><a href="https://github.com/oluwabusola-may/Credit-Risk-Portfolio-Analytics">Credit risk portfolio</a></h3>
+            <p class="what">A credit bureau view for a Nigerian lender</p>
+          </div>
+          <p class="found">Generated 10,000 customer records, cleaned them, answered 12 SQL questions and built an executive dashboard on default and risk categories.</p>
+          <p class="tools">Python, SQL, Power BI</p>
+        </li>
+        <li>
+          <div>
+            <h3><a href="https://github.com/oluwabusola-may/Reducing-Employee-Turnover-An-HR-Analytics-Dashboard-for-Workforce-Retention">Employee turnover</a></h3>
+            <p class="what">An HR dashboard on why staff leave</p>
+          </div>
+          <p class="found">Attrition was 41.9% for staff working overtime against 23.7% for those who don’t, benchmarked against reported banking-sector turnover.</p>
+          <p class="tools">Excel, Power BI</p>
+        </li>
+        <li>
+          <div>
+            <h3><a href="https://github.com/oluwabusola-may/Retail-Sales-Performance-Analysis">NovaMart retail</a></h3>
+            <p class="what">A multi-channel retailer across Nigeria and Ghana</p>
+          </div>
+          <p class="found">Generated the data, cleaned it with outliers flagged rather than deleted, ran the SQL analysis and told the story across two dashboards.</p>
+          <p class="tools">Python, SQL, Power BI</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="internships">
+      <h2>Internships</h2>
+      <p class="lede">Projects and deliverables from my data analyst internships.</p>
+      <ul class="work">
+        <li>
+          <div>
+            <h3><a href="https://github.com/oluwabusola-may/EXcelerate-Internship">Excelerate: university applications</a></h3>
+            <p class="what">International graduate admissions, as part of a team</p>
+          </div>
+          <p class="found">Cleaned and analysed 7,543 applications from 95 countries across 153 programs, then built the dashboard and presented the findings with my team.</p>
+          <p class="tools">Power BI, DAX, data cleaning</p>
+        </li>
+        <li>
+          <div>
+            <h3><a href="https://github.com/oluwabusola-may/Afriment-Internship-Melisports">Melisport Nigeria</a></h3>
+            <p class="what">Market expansion, prospect targeting and performance tracking</p>
+          </div>
+          <p class="found">Market research, prospect tracking, dashboards and social media data analysis for a sports brand.</p>
+          <p class="tools">Excel, Power BI</p>
+        </li>
+        <li>
+          <div>
+            <h3><a href="https://github.com/oluwabusola-may/Decodelabs-internship">DecodeLabs</a></h3>
+            <p class="what">Four analysis projects</p>
+          </div>
+          <p class="found">The four projects I completed during the DecodeLabs internship, collected in one repository.</p>
+          <p class="tools">Data analysis</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="more">
+      <h2>More projects</h2>
+      <p class="lede">Earlier and shorter pieces of work.</p>
+      <ul class="work">
+        <li>
+          <div>
+            <h3><a href="https://github.com/oluwabusola-may/Logistics-Operations-Vendor-Performance-Analysis">Logistics vendor performance</a></h3>
+            <p class="what">A Nigerian logistics company, 2023 to 2024</p>
+          </div>
+          <p class="found">Diagnosed delivery failures, vendor reliability and revenue concentration in a Power BI dashboard.</p>
+          <p class="tools">Power BI</p>
+        </li>
+        <li>
+          <div>
+            <h3><a href="https://github.com/oluwabusola-may/Multi-Country-Sales-Performance">Multi-country sales</a></h3>
+            <p class="what">A fruit retailer’s four branches, 2019 to 2021</p>
+          </div>
+          <p class="found">Compared sales performance across branches in the UK, Italy, the USA and France.</p>
+          <p class="tools">Power BI</p>
+        </li>
+        <li>
+          <div>
+            <h3><a href="https://github.com/oluwabusola-may/E-Commerce-Marketing-Traffic-Analysis-SQL-">E-commerce traffic</a></h3>
+            <p class="what">Website sessions, channels and refunds</p>
+          </div>
+          <p class="found">Used SQL on thousands of sessions and orders to find growth patterns, conversion bottlenecks and refund risks.</p>
+          <p class="tools">SQL</p>
+        </li>
+        <li>
+          <div>
+            <h3><a href="https://github.com/oluwabusola-may/Customer-Purchase-Behaviour-Analysis">Bike buyer profile</a></h3>
+            <p class="what">Who is most likely to buy a bicycle</p>
+          </div>
+          <p class="found">Profiled likely buyers by income, age, marital status and commute distance to help target marketing.</p>
+          <p class="tools">Excel</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <p class="lede">My current roles.</p>
+      <div class="cols">
+        <div>
+          <div class="job">
+            <h3>Operations and Data Analyst, EA Lawtex Limited</h3>
+            <p class="when">May 2026 to present</p>
+            <p>Produce daily and monthly reports, reconcile data across sources, and report to the managing director twice a day. Track delivery details from clients and agents in other locations.</p>
+          </div>
+        </div>
+        <div>
+          <div class="job">
+            <h3>Data Analyst Tutor, Code Zone Nigeria</h3>
+            <p class="when">July 2026 to present</p>
+            <p>Teach live online classes in Excel, Power BI and Python to 50 students, who build dashboards, present their findings and write code to clean data.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <p class="lede">The tools I use most.</p>
+      <ul class="skills">
+        <li>SQL (MySQL)</li><li>Power BI and DAX</li><li>Excel and Power Query</li><li>Python (pandas)</li><li>Data cleaning</li><li>Dashboards and reporting</li><li>Survey design</li><li>Teaching and presenting</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Get in touch</h2>
+      <p>I’m looking for a full-time data analyst role, in Nigeria or remote. The quickest way to reach me is email.</p>
+      <p class="links">
+        <a href="mailto:oyenugaoluwabusola2@gmail.com">oyenugaoluwabusola2@gmail.com</a>
+        <a href="https://www.linkedin.com/in/oluwabusola-oyenuga/">LinkedIn</a>
+        <a href="https://github.com/oluwabusola-may">GitHub</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>© 2026 Oluwabusola Oyenuga</footer>
+</div>
+</body>
+</html>
